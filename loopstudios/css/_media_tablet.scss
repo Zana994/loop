@@ -36,18 +36,16 @@ nav {
         & > h3 { font-size: 25px;}
     }
 }
-.logo { 
-    width: 180px;
-    background-size: 80%;
-}
+
 .social-media {
     ul {
+        margin-top: 1%;
         li {
             width: 20px;
             height: 30px;
             &::after { width: 15px;}
         }
-        .icon1, .icon2, .icon3, .icon4 { background-size: 80%;}
+        .icon1, .icon2, .icon3, .icon4 { background-size: 90%;}
     }
 }
 .nav {

@@ -590,9 +590,8 @@ footer p {
   .projects div > h3 {
     font-size: 25px;
   }
-  .logo {
-    width: 180px;
-    background-size: 80%;
+  .social-media ul {
+    margin-top: 1%;
   }
   .social-media ul li {
     width: 20px;
@@ -602,7 +601,7 @@ footer p {
     width: 15px;
   }
   .social-media ul .icon1, .social-media ul .icon2, .social-media ul .icon3, .social-media ul .icon4 {
-    background-size: 80%;
+    background-size: 90%;
   }
   .nav ul {
     width: 40%;
@@ -659,7 +658,7 @@ footer p {
     height: 20px;
     background: url(images/icon-close.svg) no-repeat;
     position: absolute;
-    top: 5%;
+    top: 4%;
     right: 5%;
     cursor: pointer;
   }
@@ -688,9 +687,8 @@ footer p {
     display: -ms-flexbox;
     display: flex;
   }
-  .logo {
-    background-position: left;
-  }
+  /*
+.logo { background-position: left;}*/
   .poster {
     background: url(images/mobile/image-hero.jpg) no-repeat;
     height: 100vh;
@@ -698,6 +696,7 @@ footer p {
   }
   .poster .poster-text {
     width: 90%;
+    height: 30%;
     margin: auto;
     padding: 0;
     border-width: 2px;
@@ -711,16 +710,17 @@ footer p {
             flex-direction: column;
     margin-top: 5%;
     margin-bottom: 5%;
-    height: 100vh;
   }
   .about .photo {
     width: 100%;
     background: url(images/mobile/image-interactive.jpg) no-repeat;
     background-size: 100%;
-    height: 448px;
+    margin-bottom: 0;
+    height: 280px;
   }
   .about .about-text {
     width: 100%;
+    position: relative;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -988,7 +988,7 @@ footer p {
     height: 20px;
     background: url(images/icon-close.svg) no-repeat;
     position: absolute;
-    top: 5%;
+    top: 4%;
     right: 5%;
     cursor: pointer;
   }
@@ -1017,9 +1017,8 @@ footer p {
     display: -ms-flexbox;
     display: flex;
   }
-  .logo {
-    background-position: left;
-  }
+  /*
+.logo { background-position: left;}*/
   .poster {
     background: url(images/mobile/image-hero.jpg) no-repeat;
     height: 100vh;
@@ -1027,6 +1026,7 @@ footer p {
   }
   .poster .poster-text {
     width: 90%;
+    height: 30%;
     margin: auto;
     padding: 0;
     border-width: 2px;
@@ -1040,16 +1040,17 @@ footer p {
             flex-direction: column;
     margin-top: 5%;
     margin-bottom: 5%;
-    height: 100vh;
   }
   .about .photo {
     width: 100%;
     background: url(images/mobile/image-interactive.jpg) no-repeat;
     background-size: 100%;
-    height: 448px;
+    margin-bottom: 0;
+    height: 280px;
   }
   .about .about-text {
     width: 100%;
+    position: relative;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1317,7 +1318,7 @@ footer p {
     height: 20px;
     background: url(images/icon-close.svg) no-repeat;
     position: absolute;
-    top: 5%;
+    top: 4%;
     right: 5%;
     cursor: pointer;
   }
@@ -1346,9 +1347,8 @@ footer p {
     display: -ms-flexbox;
     display: flex;
   }
-  .logo {
-    background-position: left;
-  }
+  /*
+.logo { background-position: left;}*/
   .poster {
     background: url(images/mobile/image-hero.jpg) no-repeat;
     height: 100vh;
@@ -1356,6 +1356,7 @@ footer p {
   }
   .poster .poster-text {
     width: 90%;
+    height: 30%;
     margin: auto;
     padding: 0;
     border-width: 2px;
@@ -1369,16 +1370,17 @@ footer p {
             flex-direction: column;
     margin-top: 5%;
     margin-bottom: 5%;
-    height: 100vh;
   }
   .about .photo {
     width: 100%;
     background: url(images/mobile/image-interactive.jpg) no-repeat;
     background-size: 100%;
-    height: 448px;
+    margin-bottom: 0;
+    height: 280px;
   }
   .about .about-text {
     width: 100%;
+    position: relative;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
