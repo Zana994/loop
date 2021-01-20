@@ -156,11 +156,13 @@ section {
   color: white;
   border: 3px solid white;
   width: 46%;
-  height: 43%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   text-transform: uppercase;
   font-family: Josefin_Sans;
   font-size: 60px;
-  padding: 3% 3% 0 3%;
+  padding: 3%;
   margin: 6% 0 0 10%;
 }
 
@@ -562,8 +564,6 @@ footer p {
   }
   .poster .poster-text {
     font-size: 40px;
-    height: 35%;
-    padding-top: 6%;
   }
   .about .photo {
     height: 300px;
@@ -696,342 +696,9 @@ footer p {
   }
   .poster .poster-text {
     width: 90%;
-    height: 30%;
     margin: auto;
-    padding: 0;
+    padding: 4%;
     border-width: 2px;
-    padding-left: 7%;
-    padding-top: 10%;
-  }
-  .about {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-  .about .photo {
-    width: 100%;
-    background: url(images/mobile/image-interactive.jpg) no-repeat;
-    background-size: 100%;
-    margin-bottom: 0;
-    height: 280px;
-  }
-  .about .about-text {
-    width: 100%;
-    position: relative;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .about .about-text h3 {
-    width: 80%;
-    text-align: center;
-    font-weight: lighter;
-  }
-  .about .about-text p {
-    width: 70%;
-    font-size: 14px;
-    text-align: center;
-    line-height: 17px;
-    color: dimgray;
-  }
-  .project-section {
-    width: 100%;
-    position: relative;
-    padding-bottom: 10%;
-  }
-  .heading {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .heading h3 {
-    text-align: center;
-    width: 100%;
-    font-weight: lighter;
-  }
-  .heading button {
-    position: absolute;
-    bottom: 5%;
-    left: 35%;
-    width: 30%;
-    font-size: 14px;
-  }
-  .projects {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0;
-    margin-bottom: 10%;
-    padding-bottom: 20%;
-  }
-  .projects div {
-    width: 100%;
-    height: 120px;
-  }
-  .projects div h3 {
-    left: 0;
-    width: 45%;
-    font-size: 25px;
-    padding-left: 5%;
-  }
-  .projects .img1::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: url(images/mobile/image-deep-earth.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  .projects .img2::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: url(images/mobile/image-night-arcade.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  .projects .img3::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: url(images/mobile/image-soccer-team.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  .projects .img4::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: url(images/mobile/image-grid.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  .projects .img5::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: url(images/mobile/image-from-above.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  .projects .img6::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: url(images/mobile/image-pocket-borealis.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  .projects .img7::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: url(images/mobile/image-curiosity.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  .projects .img8::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: url(images/mobile/image-fisheye.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  .social-media {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .social-media .logo::after {
-    content: none;
-  }
-  .social-media ul {
-    position: absolute;
-    bottom: 20%;
-    width: 30%;
-  }
-  .social-media .logo {
-    background-position: center;
-    padding-bottom: 7%;
-  }
-  .nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-bottom: 15%;
-    margin-bottom: 5%;
-  }
-  .nav ul {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .nav p {
-    position: absolute;
-    bottom: 10%;
-    left: 0;
-    text-align: center;
-    width: 100%;
-  }
-  footer {
-    padding-top: 5%;
-  }
-  footer p {
-    padding-top: 5%;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  nav {
-    display: block;
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: none;
-  }
-  nav ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  nav ul a {
-    text-transform: uppercase;
-    font-family: Josefin_Sans;
-    font-size: 17px;
-  }
-  nav ul a::after {
-    content: none;
-  }
-  .close-icon {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: url(images/icon-close.svg) no-repeat;
-    position: absolute;
-    top: 4%;
-    right: 5%;
-    cursor: pointer;
-  }
-  .frame {
-    width: 90%;
-  }
-  .hamburger {
-    display: block;
-    height: 16px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-  .hamburger a {
-    display: block;
-    width: 24px;
-    height: 16px;
-    background: url(images/icon-hamburger.svg);
-    cursor: pointer;
-  }
-  .header {
-    margin-top: 6%;
-  }
-  .header nav:target {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  /*
-.logo { background-position: left;}*/
-  .poster {
-    background: url(images/mobile/image-hero.jpg) no-repeat;
-    height: 100vh;
-    background-size: cover;
-  }
-  .poster .poster-text {
-    width: 90%;
-    height: 30%;
-    margin: auto;
-    padding: 0;
-    border-width: 2px;
-    padding-left: 7%;
-    padding-top: 10%;
   }
   .about {
     -webkit-box-orient: vertical;
@@ -1356,12 +1023,9 @@ footer p {
   }
   .poster .poster-text {
     width: 90%;
-    height: 30%;
     margin: auto;
-    padding: 0;
+    padding: 4%;
     border-width: 2px;
-    padding-left: 7%;
-    padding-top: 10%;
   }
   .about {
     -webkit-box-orient: vertical;
@@ -1611,7 +1275,6 @@ footer p {
   }
   .poster .poster-text {
     font-size: 35px;
-    padding-top: 15%;
   }
   .projects div > h3 {
     font-size: 20px;

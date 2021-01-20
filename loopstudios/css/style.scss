@@ -102,13 +102,13 @@ section { width: 100%;}
         color: $primary-color1;
         border: 3px solid $primary-color1;
         width: 46%;
-        height: 43%;
+        height: fit-content;
         text-transform: uppercase;
         font: {
             family: $heading-font;
             size: 60px;
         }
-        padding: 3% 3% 0 3%;
+        padding: 3%;
         margin: 6% 0 0 10%;
     }
 }
@@ -310,13 +310,7 @@ footer {
 }
 
 @media only screen and (max-width: 425px) {
-    @import "./media_phone";
-    
-    
-}
-
-@media only screen and (max-width: 375px) {
-    @import "./media_phone";
+    @import "./media_phone";  
 }
 
 @media only screen and (max-width: 320px) {
@@ -325,7 +319,6 @@ footer {
     .poster { 
         .poster-text { 
             font-size: 35px;
-            padding-top: 15%;
         }
     }
     .projects {
