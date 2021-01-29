@@ -1,0 +1,936 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* Set general border sizing */
+}
+
+ol, ul {
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Alata;
+  src: url(fonts/Alata/Alata-Regular.ttf);
+}
+
+@font-face {
+  font-family: Josefin_Sans;
+  src: url(fonts/Josefin_Sans/static/JosefinSans-Light.ttf);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+}
+
+.frame {
+  width: 80%;
+  margin: auto;
+}
+
+/* HEADER */
+header {
+  padding: 2rem 0;
+  width: 100%;
+  z-index: 111;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav div {
+  width: 45%;
+}
+
+.hamburger-nav {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+.logo {
+  width: 192px;
+  height: 32px;
+  background: url(images/logo.svg) center center no-repeat;
+  background-size: cover;
+  z-index: 111;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.nav a {
+  color: white;
+  font-family: Alata;
+  font-size: 1rem;
+  font-weight: 400;
+  position: relative;
+}
+
+.nav a::after {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: -50%;
+  right: 30%;
+  display: none;
+}
+
+.nav a:hover::after {
+  display: block;
+}
+
+/* SECTION POSTER */
+.poster {
+  width: 100%;
+  height: 650px;
+  background: url(images/desktop/image-hero.jpg) center center no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.poster .title {
+  height: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.poster h1 {
+  color: white;
+  font-family: Josefin_Sans;
+  font-size: 3.8rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  width: 57%;
+  border: 2px solid white;
+  padding: 2.5rem;
+}
+
+/* SECTION ABOUT */
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: 6rem auto;
+}
+
+.about .photo {
+  width: 60%;
+  height: 500px;
+  background: url(images/desktop/image-interactive.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.about .about-text {
+  width: 53%;
+  height: 63%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: absolute;
+  bottom: -1%;
+  right: 0;
+  background-color: white;
+}
+
+.about .about-text h1 {
+  color: black;
+  font-family: Josefin_Sans;
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  width: 80%;
+}
+
+.about .about-text p {
+  color: #8c8c8c;
+  font-family: Josefin_Sans;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
+  width: 80%;
+}
+
+/* SECTION CREATIONS */
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0 5rem 0;
+}
+
+.heading h1 {
+  color: black;
+  font-family: Josefin_Sans;
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.heading button {
+  border: 1px solid black;
+  color: black;
+  font-family: Alata;
+  font-size: 1.2rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: white;
+  letter-spacing: 0.5rem;
+  padding: 0.4rem 1.3rem;
+}
+
+.heading button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.grid-projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(256px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+  justify-items: center;
+  gap: 2rem 1rem;
+  padding-bottom: 7rem;
+}
+
+.grid-projects .grid-item {
+  width: 256px;
+  height: 450px;
+  position: relative;
+}
+
+.grid-projects .grid-item h3 {
+  position: absolute;
+  bottom: 8%;
+  left: 10%;
+  color: white;
+  font-family: Josefin_Sans;
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: 65%;
+}
+
+.grid-projects .grid-item:hover {
+  cursor: pointer;
+}
+
+.grid-projects .grid-item:hover > h3 {
+  color: black;
+}
+
+.grid-projects .grid-item:hover::before {
+  opacity: 0.3;
+}
+
+.grid-projects .item1::before {
+  content: '';
+  width: 256px;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(images/desktop/image-deep-earth.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.grid-projects .item2::before {
+  content: '';
+  width: 256px;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(images/desktop/image-night-arcade.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.grid-projects .item3::before {
+  content: '';
+  width: 256px;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(images/desktop/image-soccer-team.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.grid-projects .item4::before {
+  content: '';
+  width: 256px;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(images/desktop/image-grid.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.grid-projects .item5::before {
+  content: '';
+  width: 256px;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(images/desktop/image-from-above.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.grid-projects .item6::before {
+  content: '';
+  width: 256px;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(images/desktop/image-pocket-borealis.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.grid-projects .item7::before {
+  content: '';
+  width: 256px;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(images/desktop/image-curiosity.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.grid-projects .item8::before {
+  content: '';
+  width: 256px;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(images/desktop/image-fisheye.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer p {
+  color: dimgray;
+  font-family: Alata;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+footer > p {
+  padding-bottom: 1rem;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+}
+
+.social-media ul {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-media ul li {
+  width: 24px;
+  height: 50px;
+  position: relative;
+}
+
+.social-media ul li::after {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: -5%;
+  right: 10%;
+  display: none;
+}
+
+.social-media ul li:hover {
+  cursor: pointer;
+}
+
+.social-media ul li:hover::after {
+  display: block;
+}
+
+.social-media ul .icon1 {
+  background: url(images/icon-facebook.svg) center center no-repeat;
+  background-size: cover;
+  background-size: 100%;
+}
+
+.social-media ul .icon2 {
+  background: url(images/icon-twitter.svg) center center no-repeat;
+  background-size: cover;
+  background-size: 100%;
+}
+
+.social-media ul .icon3 {
+  background: url(images/icon-pinterest.svg) center center no-repeat;
+  background-size: cover;
+  background-size: 100%;
+}
+
+.social-media ul .icon4 {
+  background: url(images/icon-instagram.svg) center center no-repeat;
+  background-size: cover;
+  background-size: 100%;
+}
+
+.nav-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2rem;
+}
+
+.nav-2 .nav {
+  width: 45%;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1130px) {
+  .poster h1 {
+    font-size: 3rem;
+  }
+  .social-media ul {
+    width: 20%;
+  }
+  .about .about-text h1 {
+    font-size: 2rem;
+  }
+  .heading h1 {
+    font-size: 2rem;
+  }
+  .heading button {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  nav div {
+    width: 50%;
+  }
+  .nav-2 .nav {
+    width: 50%;
+  }
+  .about .photo {
+    height: 400px;
+  }
+  .about .about-text {
+    height: 70%;
+  }
+  .about .about-text h1 {
+    font-size: 1.8rem;
+  }
+  .heading h1 {
+    font-size: 1.8rem;
+  }
+  .heading button {
+    padding: 0.4rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  nav div {
+    width: 55%;
+  }
+  .nav-2 .nav {
+    width: 55%;
+  }
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .photo {
+    width: 100%;
+  }
+  .about .about-text {
+    width: 100%;
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 3rem;
+  }
+  .about .about-text h1 {
+    width: 75%;
+  }
+  .about .about-text p {
+    width: 75%;
+  }
+  .poster h1 {
+    width: 70%;
+  }
+  .heading {
+    padding-top: 0;
+  }
+  .social-media ul {
+    width: 23%;
+  }
+  .nav-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-2 ul {
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .poster h1 {
+    width: 100%;
+  }
+  .about .about-text h1 {
+    width: 80%;
+    text-align: center;
+  }
+  .about .about-text p {
+    width: 80%;
+    text-align: center;
+  }
+  nav div {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  nav div ul {
+    height: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .close {
+    display: block;
+    position: absolute;
+    top: 38px;
+    right: 10%;
+    cursor: pointer;
+  }
+  .close a {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url(images/icon-close.svg) no-repeat;
+  }
+  .hamburger-nav {
+    display: block;
+    height: 16px;
+  }
+  .hamburger-nav a {
+    display: block;
+    width: 24px;
+    height: 16px;
+    background: url(images/icon-hamburger.svg) center center no-repeat;
+    background-size: cover;
+  }
+  nav div:target {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .nav {
+    width: 80%;
+    margin: 8rem auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  nav .nav a {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: Josefin_Sans;
+  }
+  nav .nav li {
+    padding-bottom: 2rem;
+  }
+  footer {
+    position: relative;
+  }
+  .social-media {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .social-media ul {
+    width: 25%;
+    position: absolute;
+    bottom: 5rem;
+  }
+  .nav-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-2 .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 4rem;
+  }
+  .nav-2 .nav li {
+    padding-bottom: 1rem;
+  }
+  .nav-2 p {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: absolute;
+    bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .poster h1 {
+    font-size: 2.5rem;
+  }
+  .social-media ul {
+    width: 30%;
+  }
+  .heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .heading h1 {
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .poster {
+    background: url(images/mobile/image-hero.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .poster h1 {
+    font-size: 2rem;
+  }
+  .poster .title {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about {
+    margin: 3rem auto;
+  }
+  .about .photo {
+    height: 300px;
+    background: url(images/mobile/image-interactive.jpg) center center no-repeat;
+    background-size: cover;
+    background-size: 100%;
+  }
+  .about .about-text {
+    margin-top: 0;
+  }
+  .creations {
+    position: relative;
+  }
+  .heading {
+    padding-bottom: 0;
+  }
+  .heading h1 {
+    padding-bottom: 0;
+  }
+  .heading button {
+    position: absolute;
+    bottom: 2.5rem;
+  }
+  .grid-projects {
+    gap: 0 0;
+  }
+  .grid-projects .grid-item {
+    width: 100%;
+    height: 180px;
+  }
+  .grid-projects .grid-item h3 {
+    bottom: 1.5rem;
+    width: 40%;
+    font-size: 1.5rem;
+  }
+  .grid-projects .item1::before {
+    content: '';
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(images/mobile/image-deep-earth.jpg) center center no-repeat;
+    background-size: cover;
+    background-size: 120%;
+  }
+  .grid-projects .item2::before {
+    content: '';
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(images/mobile/image-night-arcade.jpg) center center no-repeat;
+    background-size: cover;
+    background-size: 120%;
+  }
+  .grid-projects .item3::before {
+    content: '';
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(images/mobile/image-soccer-team.jpg) center center no-repeat;
+    background-size: cover;
+    background-size: 120%;
+  }
+  .grid-projects .item4::before {
+    content: '';
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(images/mobile/image-grid.jpg) center center no-repeat;
+    background-size: cover;
+    background-size: 120%;
+  }
+  .grid-projects .item5::before {
+    content: '';
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(images/mobile/image-from-above.jpg) center center no-repeat;
+    background-size: cover;
+    background-size: 120%;
+  }
+  .grid-projects .item6::before {
+    content: '';
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(images/mobile/image-pocket-borealis.jpg) center center no-repeat;
+    background-size: cover;
+    background-size: 120%;
+  }
+  .grid-projects .item7::before {
+    content: '';
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(images/mobile/image-curiosity.jpg) center center no-repeat;
+    background-size: cover;
+    background-size: 120%;
+  }
+  .grid-projects .item8::before {
+    content: '';
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(images/mobile/image-fisheye.jpg) center center no-repeat;
+    background-size: cover;
+    background-size: 120%;
+  }
+  .social-media ul {
+    width: 40%;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .grid-projects .grid-item::before {
+    background-size: 140%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .poster h1 {
+    font-size: 1.7rem;
+  }
+  .about .about-text h1 {
+    font-size: 1.6rem;
+  }
+  .heading h1 {
+    font-size: 1.6rem;
+  }
+  .grid-projects .grid-item h3 {
+    font-size: 1.3rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

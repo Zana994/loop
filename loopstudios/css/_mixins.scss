@@ -1,0 +1,43 @@
+@mixin bgd-style($url) {
+    background: $url center center no-repeat;
+    background-size: cover;
+}
+
+@mixin flex-pos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+@mixin text-style($color,$family,$size,$weight) {
+    color: $color;
+    font: {
+        family: $family;
+        size: $size;
+        weight: $weight;
+    }
+}
+
+@mixin project-photo($url) {
+    content: '';
+    width: 256px;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @include bgd-style($url);
+}
+
+@mixin project-photo-mobile($url) {
+    content: '';
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @include bgd-style($url); 
+}
